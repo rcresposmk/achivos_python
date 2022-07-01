@@ -3,6 +3,7 @@ import time
 import subprocess
 import psutil
 
+# Comentario para git
 robot.hotkey('winleft', 'd')
 subprocess.run([r"\\m-sys002\GIGOBIN\GIGO.exe"])
 time.sleep(1)
