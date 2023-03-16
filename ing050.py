@@ -10,17 +10,18 @@ subprocess.run([r"\\m-sys002\GIGOBIN\GIGO.exe"])
 time.sleep(1)
 
 robot.hotkey('winleft', 'up')
-for i in range(4):
+for i in range(3):
     robot.press('down')
-
 robot.press('enter')
 
-robot.write('xxx', interval=0.25)
-robot.write('356z', interval=0.25)
-
+robot.write('m03', interval=0.25)
+robot.write('mis4', interval=0.25)
 robot.press('enter')
-for i in range(6):
-    robot.press('down')
+
+time.sleep(3)
+robot.press('tab')
+time.sleep(1)
+robot.write('7', interval=0.25)
 
 robot.press('enter')
 

@@ -7,28 +7,36 @@ import pandas as pd
 robot.hotkey('winleft', 'd')
 # Open GIGO from network
 subprocess.run([r"\\m-sys002\GIGOBIN\GIGO.exe"])
-time.sleep(1)
+time.sleep(10)
 
 robot.hotkey('winleft', 'up')
-for i in range(4):
+for i in range(3):
     robot.press('down')
 robot.press('enter')
 
-robot.write('xxx', interval=0.25)
-robot.write('356z', interval=0.25)
+time.sleep(3)
+
+robot.write('m03', interval=0.25)
+robot.write('mis4', interval=0.25)
 robot.press('enter')
+
+time.sleep(3)
 
 robot.write('prt', interval=0.25)
 robot.press('enter')
-
+time.sleep(1)
 robot.press('tab')
+time.sleep(1)
 robot.press('down')
+time.sleep(1)
 robot.press('down')
+time.sleep(1)
 robot.press('enter')
 
 robot.write('prd011', interval=0.25)
 for i in range(7):
     robot.press('left')
+    time.sleep(0.5)
 robot.press('enter')
 
 time.sleep(20)
