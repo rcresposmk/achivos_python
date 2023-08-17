@@ -4,7 +4,7 @@ import subprocess
 import psutil
 
 robot.hotkey('winleft', 'd')
-subprocess.run([r"\\m-sys002\GIGOBIN\GIGO.exe"])
+subprocess.run([r"\\m-sys003\GIGOBIN\GIGO.exe"])
 time.sleep(10)
 
 robot.hotkey('winleft', 'up')
@@ -41,7 +41,7 @@ robot.press('enter')
 robot.press('tab')
 robot.press('tab')
 
-robot.write(r'\\10.1.2.47\d$\CSV\M\DN\SOD\BOB020')
+robot.write(r'\\10.1.2.224\d$\CSV\M\DN\SOD\BOB020')
 robot.press('enter')
 robot.press('enter')
 

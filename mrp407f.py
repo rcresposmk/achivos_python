@@ -6,7 +6,7 @@ import pandas as pd
 
 robot.hotkey('winleft', 'd')
 # Open GIGO from network
-subprocess.run([r"\\m-sys002\GIGOBIN\GIGO.exe"])
+subprocess.run([r"\\m-sys003\GIGOBIN\GIGO.exe"])
 time.sleep(10)
 
 robot.hotkey('winleft', 'up')
@@ -44,7 +44,7 @@ robot.press('enter')
 robot.press('tab')
 robot.press('tab')
 
-robot.write(r'\\10.1.2.47\d$\CSV\M\DN\PM\MRP407F')
+robot.write(r'\\10.1.2.224\d$\CSV\M\DN\PM\MRP407F')
 robot.press('enter')
 robot.press('enter')
 
@@ -62,5 +62,5 @@ for proc in psutil.process_iter():
 time.sleep(5)
 
 # convert .xls to .cvs
-read_file = pd.read_excel (r'\\10.1.2.47\d$\CSV\M\DN\PM\MRP407F.xls', 'MRP407F')
-read_file.to_csv (r'\\10.1.2.47\d$\CSV\M\DN\PM\MRP407F.csv', index=False, sep=';')
+read_file = pd.read_excel (r'\\10.1.2.224\d$\CSV\M\DN\PM\MRP407F.xls', 'MRP407F')
+read_file.to_csv (r'\\10.1.2.224\d$\CSV\M\DN\PM\MRP407F.csv', index=False, sep=';')
